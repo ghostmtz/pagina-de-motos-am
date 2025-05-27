@@ -99,8 +99,8 @@ font-family: Arial,sans-serif;
 /***********************************************/
 #pagecell1{
 	position:absolute;
-	top: 15px;
-	left: 17px;
+	top: 36px;
+	left: 34px;
 	right: 2%;
 	width:95.6%;
 	background-color: #ffffff;
@@ -195,8 +195,8 @@ font-family: Arial,sans-serif;
 
 #pageName img{
 	position: absolute;
-	top: 0px;
-	right: 6px;
+	top: 51px;
+	right: -1px;
 	padding: 0px;
 	margin: 0px;
 }

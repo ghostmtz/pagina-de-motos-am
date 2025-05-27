@@ -6,6 +6,149 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Untitled Document</title>
 <link rel="stylesheet" href="emx_nav_left.css" type="text/css" />
+<style>
+/* Modo oscuro para toda la página */
+body {
+  background-color: #121212; /* fondo muy oscuro */
+  color: #e0e0e0; /* texto claro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FF6600; /* naranja para links */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Encabezado - masthead */
+#masthead table {
+  background-color: #222; /* un poco más oscuro que #333 */
+  color: #eee;
+}
+#masthead a {
+  color: #FF6600;
+}
+
+/* Botones en el masthead */
+#masthead a[style*="background-color"] {
+  background-color: #FF6600 !important;
+  color: white !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Submenus - subglobalNav */
+.subglobalNav {
+  background-color: #222;
+  color: #ddd;
+  border: 1px solid #444;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Navegación lateral y links */
+#pageNav, #sectionLinks, .relatedLinks {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 10px;
+  color: #ccc;
+}
+
+#pageNav a {
+  color: #FF6600;
+  margin-right: 10px;
+}
+
+/* Contenido principal */
+#content {
+  background-color: #181818;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+#content h3, #content p {
+  color: #ddd;
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+  color: #999;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
+/* Imágenes con borde claro para resaltar */
+.feature img {
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+ #pagecell1 {
+    background-color: #1a1a1a; /* fondo oscuro */
+    color: #ddd; /* texto claro */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  #pagecell1 img#tl,
+  #pagecell1 img#tr {
+    filter: brightness(80%);
+  }
+  #breadCrumb {
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  #pageName h2 {
+    color: #eee;
+    margin-top: 0;
+  }
+  #pageNav {
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+ #sectionLinks {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+  }
+
+  #sectionLinks a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #292929;
+    color: #FF6600; /* Letras anaranjadas */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+
+  #sectionLinks a:hover {
+    background-color: #FF6600;
+    color: #fff; /* Letras blancas al pasar el mouse */
+    transform: translateX(5px);
+  }
+
+  #sectionLinks a:empty {
+    display: none; /* Oculta los links vacíos */
+  }
+</style>
 <script type="text/javascript">
 <!--
 var time = 3000;
@@ -44,6 +187,28 @@ function closesubnav(event){
 <body onmousemove="closesubnav(event);">
 <div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="#pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
  <div id="masthead">
+
+  <!-- Aquí inserté el encabezado que pediste -->
+  <table width="100%" cellspacing="0" cellpadding="5" style="background-color: #333;">
+    <tr>
+      <td colspan="3" class="logo" nowrap="nowrap" style="display: flex; align-items: center; gap: 15px;">
+        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">MOTOCICLETAS AM</a>
+        <span class="tagline" style="color: white;">| MOTORS</span>
+
+        <!-- Botón Ventas -->
+        <a href="menu de las motos.html" style="background-color: #FF6600; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+          Modelos Motocicletas
+        </a>
+
+        <!-- Botón Contacto -->
+        <a href="contacto.html" style="background-color: #FF6600; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-weight: bold;">
+          Acerca De Mi
+        </a>
+      </td>
+    </tr>
+  </table>
+  <!-- Fin encabezado -->
+
   <h1 id="siteName">
     <!-- end globalNav -->
   
@@ -57,121 +222,69 @@ function closesubnav(event){
   <div id="subglobal8" class="subglobalNav"> <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> </div>
 </div>
 <!-- end masthead -->
+
 <div id="pagecell1">
   <!--pagecell1-->
-  <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl" /> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr" />
+  <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl" />
+  <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr" />
   <div id="breadCrumb"></div>
   <div id="pageName">
-    <h2>AM MOTORS </h2>
-    <img alt="small logo" src="" height="59" width="66"/> </div>
+    <h2>AM MOTORS</h2>
+  </div>
   <div id="pageNav">
-    <div id="sectionLinks"> <a href="CF MOTO 250R.html">CF MOTO 250SR </a><a href="CF MOTO NK 450.html">CF MOTO 450NK </a><a href="KTM 390.html">KTM DUKE390 </a><a href="SUSUKI GSXR 600.html">SUSUKI GSXR 600 </a><a href="#"></a><a href="#">Section Link</a> <a href="#">Section Link</a> <a href="#">Section Link</a> <a href="#">Section Link</a> </div>
+    <div id="sectionLinks">
+  <a href="CF MOTO 250R.html">CF MOTO 250SR</a>
+  <a href="CF MOTO NK 450.html">CF MOTO 450NK</a>
+  <a href="KTM 390.html">KTM DUKE390</a>
+  <a href="SUSUKI GSXR 600.html">SUSUKI GSXR 600</a>
+  <a href="#">Section Link</a>
+  <a href="#">Section Link</a>
+  <a href="#">Section Link</a>
+  <a href="#">Section Link</a>
+</div>
     <div class="relatedLinks">
       <h3>Related Link Category</h3>
-      <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> </div>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+    </div>
     <div class="relatedLinks">
       <h3>Related Link Category</h3>
-      <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> <a href="#">Related Link</a> </div>
-    <div id="advert"> <img src="" alt="" width="107" height="66" /> Advertisement copy goes here. Advertisement copy goes here. </div>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+      <a href="#">Related Link</a>
+    </div>
+    <div id="advert">
+      <img src="" alt="" width="107" height="66" /> Advertisement copy goes here. Advertisement copy goes here.
+    </div>
   </div>
   <div id="content">
-    <div class="feature"><img src="motos_antiguas_harley-.jpg" width="376" height="221" />
+    <div class="feature">
+      <img src="motos_antiguas_harley-.jpg" width="376" height="221" />
       <h3>Historia de las motos y su evolucion</h3>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
-      <p>. </p>
+      <p>.</p>
     </div>
     <div class="story">
-      <h3 data-start="233" data-end="276">&#55356;&#57281; <strong data-start="240" data-end="276">Or&iacute;genes (Finales del siglo XIX)</strong></h3>
-      <ul data-start="278" data-end="632">
-        <li data-start="278" data-end="426">
-          <p data-start="280" data-end="426"><strong data-start="280" data-end="288">1867</strong>: El estadounidense <strong data-start="308" data-end="334">Sylvester Howard Roper</strong> construy&oacute; una bicicleta a vapor, considerada uno de los primeros prototipos de motocicleta.</p>
-        </li>
-        <li data-start="427" data-end="632">
-          <p data-start="429" data-end="632"><strong data-start="429" data-end="437">1885</strong>: El alem&aacute;n <strong data-start="449" data-end="469">Gottlieb Daimler</strong>, junto con <strong data-start="481" data-end="500">Wilhelm Maybach</strong>, cre&oacute; la <strong data-start="510" data-end="523">Reitwagen</strong>, una bicicleta de madera con un motor de combusti&oacute;n interna. Es considerada la <strong data-start="603" data-end="631">primera motocicleta real</strong>.</p>
-        </li>
-      </ul>
-      <hr data-start="634" data-end="637" />
-      <h3 data-start="639" data-end="695">&#55357;&#56615; <strong data-start="646" data-end="695">Primeras motocicletas comerciales (1900-1920)</strong></h3>
-      <ul data-start="697" data-end="1026">
-        <li data-start="697" data-end="784">
-          <p data-start="699" data-end="784"><strong data-start="699" data-end="707">1901</strong>: <strong data-start="709" data-end="726">Royal Enfield</strong> y <strong data-start="729" data-end="739">Indian</strong> (EE. UU.) empezaron a fabricar motocicletas.</p>
-        </li>
-        <li data-start="785" data-end="892">
-          <p data-start="787" data-end="892"><strong data-start="787" data-end="795">1903</strong>: <strong data-start="797" data-end="816">Harley-Davidson</strong> fue fundada en Milwaukee, EE. UU., y se convirti&oacute; en un &iacute;cono de las motos.</p>
-        </li>
-        <li data-start="893" data-end="1026">
-          <p data-start="895" data-end="1026">Durante la <strong data-start="906" data-end="932">Primera Guerra Mundial</strong>, las motocicletas se usaron ampliamente en el campo de batalla, lo que impuls&oacute; su desarrollo.</p>
-        </li>
-      </ul>
-      <hr data-start="1028" data-end="1031" />
-      <h3 data-start="1033" data-end="1076">&#55356;&#57293;&#65039; <strong data-start="1041" data-end="1076">Expansi&oacute;n y mejoras (1920-1945)</strong></h3>
-      <ul data-start="1078" data-end="1354">
-        <li data-start="1078" data-end="1132">
-          <p data-start="1080" data-end="1132">Se desarrollaron <strong data-start="1097" data-end="1121">modelos m&aacute;s potentes</strong> y fiables.</p>
-        </li>
-        <li data-start="1133" data-end="1250">
-          <p data-start="1135" data-end="1250">Marcas como <strong data-start="1147" data-end="1154">BMW</strong> (Alemania), <strong data-start="1167" data-end="1177">Norton</strong> (Reino Unido) y <strong data-start="1194" data-end="1208">Moto Guzzi</strong> (Italia) surgieron y ganaron popularidad.</p>
-        </li>
-        <li data-start="1251" data-end="1354">
-          <p data-start="1253" data-end="1354">En la <strong data-start="1259" data-end="1285">Segunda Guerra Mundial</strong>, Harley-Davidson y otras marcas produjeron miles de motos militares.</p>
-        </li>
-      </ul>
-      <hr data-start="1356" data-end="1359" />
-      <h3 data-start="1361" data-end="1408">&#55357;&#56485; <strong data-start="1368" data-end="1408">El auge del motociclismo (1945-1970)</strong></h3>
-      <ul data-start="1410" data-end="1770">
-        <li data-start="1410" data-end="1534">
-          <p data-start="1412" data-end="1534">Tras la guerra, la producci&oacute;n en masa y la econom&iacute;a de consumo hicieron que las motos fueran accesibles para m&aacute;s personas.</p>
-        </li>
-        <li data-start="1535" data-end="1622">
-          <p data-start="1537" data-end="1622">Nacieron clubes de motociclistas y el motociclismo se convirti&oacute; en un estilo de vida.</p>
-        </li>
-        <li data-start="1623" data-end="1770">
-          <p data-start="1625" data-end="1770">Jap&oacute;n entr&oacute; con fuerza: marcas como <strong data-start="1661" data-end="1670">Honda</strong>, <strong data-start="1672" data-end="1682">Yamaha</strong>, <strong data-start="1684" data-end="1694">Suzuki</strong> y <strong data-start="1697" data-end="1709">Kawasaki</strong> revolucionaron el mercado con motos econ&oacute;micas y confiables.</p>
-        </li>
-      </ul>
-      <hr data-start="1772" data-end="1775" />
-      <h3 data-start="1777" data-end="1822">&#55358;&#56810; <strong data-start="1784" data-end="1822">Tecnolog&iacute;a y velocidad (1970-2000)</strong></h3>
-      <ul data-start="1824" data-end="2028">
-        <li data-start="1824" data-end="1882">
-          <p data-start="1826" data-end="1882">Aumentaron la potencia, la aerodin&aacute;mica y la tecnolog&iacute;a.</p>
-        </li>
-        <li data-start="1883" data-end="1971">
-          <p data-start="1885" data-end="1971">Las superbikes como la <strong data-start="1908" data-end="1923">Honda CB750</strong> o la <strong data-start="1929" data-end="1947">Kawasaki Ninja</strong> marcaron una nueva era.</p>
-        </li>
-        <li data-start="1972" data-end="2028">
-          <p data-start="1974" data-end="2028">Se popularizaron las competiciones como el <strong data-start="2017" data-end="2027">MotoGP</strong>.</p>
-        </li>
-      </ul>
-      <hr data-start="2030" data-end="2033" />
-      <h3 data-start="2035" data-end="2091">&#9889; <strong data-start="2041" data-end="2091">Motos modernas y el&eacute;ctricas (2000 en adelante)</strong></h3>
-      <ul data-start="2093" data-end="2397">
-        <li data-start="2093" data-end="2193">
-          <p data-start="2095" data-end="2193">Se incorporaron tecnolog&iacute;as como <strong data-start="2128" data-end="2135">ABS</strong>, <strong data-start="2137" data-end="2162">inyecci&oacute;n electr&oacute;nica</strong>, <strong data-start="2164" data-end="2187">control de tracci&oacute;n</strong>, etc.</p>
-        </li>
-        <li data-start="2194" data-end="2320">
-          <p data-start="2196" data-end="2320">Aument&oacute; el inter&eacute;s en las <strong data-start="2222" data-end="2242">motos el&eacute;ctricas</strong>, con marcas como <strong data-start="2260" data-end="2280">Zero Motorcycles</strong> o incluso <strong data-start="2291" data-end="2319">Harley-Davidson LiveWire</strong>.</p>
-        </li>
-        <li data-start="2321" data-end="2397">
-          <p data-start="2323" data-end="2397">Las motos siguen siendo s&iacute;mbolo de libertad, aventura y eficiencia urbana.</p>
-        </li>
-      </ul>
-      <h3>&nbsp;</h3>
-    </div>
+      <h3 data-start="233" data-end="276">&#55356;&#57281; <strong>Este es un subtitulo bonito</strong></h3>
+      <p>Historia de la moto &nbsp;</p>
+      <p>El motor de combustión interna y el invento de la motocicleta fueron el resultado de muchas innovaciones a lo largo de la historia que permitieron desarrollar los primeros vehículos de dos ruedas impulsados por un motor.</p>
+      <p>Las primeras motocicletas aparecieron en la segunda mitad del siglo XIX, y desde entonces han evolucionado mucho en diseño, tecnología y rendimiento.</p>
+      <p>Su evolución ha influido en la cultura popular, el deporte y la industria del transporte.</p>
+      <p>Las motocicletas han pasado de ser simples máquinas para transporte personal a iconos culturales y objetos de deseo para muchos.</p>
     </div>
   </div>
+</div>
+
 <!--end pagecell1-->
-<script type="text/javascript">
-    <!--
-      var menuitem1 = new menu(7,1,"hidden");
-			var menuitem2 = new menu(7,2,"hidden");
-			var menuitem3 = new menu(7,3,"hidden");
-			var menuitem4 = new menu(7,4,"hidden");
-			var menuitem5 = new menu(7,5,"hidden");
-			var menuitem6 = new menu(7,6,"hidden");
-			var menuitem7 = new menu(7,7,"hidden");
-    // -->
-    </script>
+<div id="footer">© 2025 MOTOCICLETAS AM - Todos los derechos reservados</div>
 </body>
 </html>
